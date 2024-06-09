@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Coffee Shop</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="Главная.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">Coffee Shop</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="Главная.html" class="nav-item nav-link">Главная</a>
+                    <a href="Меню.html" class="nav-item nav-link">Меню</a>
+                    <a href="Бронирование стола.html" class="nav-item nav-link">Бронирование</a>
+                    <a href="Отзывы.html" class="nav-item nav-link">Отзывы</a>
+                    <a href="Контакты.html" class="nav-item nav-link active">Контакты</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Контакты</h1>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- Contact Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Контакты</h4>
+                <h1 class="display-4">Не стесняйтесь обращаться</h1>
+            </div>
+            <div class="row px-3 pb-2">
+                <div class="col-sm-4 text-center mb-3">
+                    <i class="fa fa-2x fa-map-marker-alt mb-3 text-primary"></i>
+                    <h4 class="font-weight-bold">Наши адреса</h4>
+                    <p>ул. Кирова, 45А, Новокузнецк, Кемеровская обл., 654007</p>
+                    <p>ул. Кирова, 12, Новокузнецк, Кемеровская обл., 654027</p>
+                </div>
+                <div class="col-sm-4 text-center mb-3">
+                    <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
+                    <h4 class="font-weight-bold">Номера телефонов</h4>
+                    <p>+7 960 907 85-65</p>
+                    <p class="m-0 text-white">.</p>
+                    <p>+7 909 518 05-55</p>
+                    
+                </div>
+                <div class="col-sm-4 text-center mb-3">
+                    <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
+                    <h4 class="font-weight-bold">Мессенджеры</h4>
+                    <p>https://t.me/rafchik_coffee</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 pb-5">
+                    <iframe style="width: 100%; height: 443px;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37741.00501992518!2d87.03465514863281!3d53.757216099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42d0c1cd2bab3d2d%3A0x8388dc14945d52bf!2z0KDQsNGE0YfQuNC6IENvZmZlZSBTaG9w!5e0!3m2!1sru!2sru!4v1715629327181!5m2!1sru!2sru" 
+                    </iframe> src=width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"</iframe>
+                </div>
+                <div class="col-md-6 pb-5">
+                    <div class="contact-form">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="control-group">
+                                <input type="text" class="form-control bg-transparent p-4" id="name" placeholder="ФИО"
+                                    required="required" data-validation-required-message="Пожалуйста, введите свое ФИО" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control bg-transparent p-4" id="email" placeholder="Почта"
+                                    required="required" data-validation-required-message="Пожалуйста, укажите свою почту" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control bg-transparent py-3 px-4" rows="5" id="message" placeholder="Ваше сообщение"
+                                    required="required"
+                                    data-validation-required-message="Пожалуйста, укажите свою свое сообщение"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Отправить сообщение
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div class="col-lg-4 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Наши контакты</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>ул. Кирова, 45А, Новокузнецк, Кемеровская обл., 654007</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+7 960 907 85-65</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>ул. Кирова, 12, Новокузнецк, Кемеровская обл., 654027</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+7 909 518 05-55</p>
+            </div>
+            <div class="col-lg-5 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Наши соц.сети</h4>
+                <p class="m-0">В наших социальных сетях вы можете следить за новостями и акциями.</p>
+                <p class="m-0">.</p>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://vk.com/rafchik.coffee"><i class="fab fa-vk"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://t.me/rafchik_coffee"><i class="fab fa-telegram"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://instagram.com/rafchik.coffee?igshid=NGVhN2U2NjQ0Yg=="><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">График работы</h4>
+                <div>
+                    <h6 class="text-white text-uppercase">ПН - ПТ</h6>
+                    <p>8:00 - 21:00</p>
+                    <h6 class="text-white text-uppercase">СБ - ВС</h6>
+                    <p>9:00 - 21:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
